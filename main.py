@@ -1,41 +1,8 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 from PIL import Image
 
 # Page Configuration
 st.set_page_config(page_title="Anas Alzahrani's Resume", layout="centered")
-
-# Sidebar for Theme Selection
-with st.sidebar:
-    selected_theme = option_menu(
-        "Theme",
-        options=["Light", "Dark"],
-        icons=["sun", "moon"],
-        default_index=0,
-        orientation="horizontal",
-    )
-
-# Apply Theme Styles with CSS
-if selected_theme == "Dark":
-    st.markdown(
-        """
-        <style>
-            .css-18e3th9 {background-color: #333333;}
-            .css-1v3fvcr {color: #FFFFFF;}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-else:
-    st.markdown(
-        """
-        <style>
-            .css-18e3th9 {background-color: #FFFFFF;}
-            .css-1v3fvcr {color: #000000;}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
 # Load a profile picture (replace 'profile.jpg' with your image file path)
 profile_pic = Image.open("1691782968841.JPEG")
@@ -86,9 +53,9 @@ for highlight in highlights:
 # Education Section with GPA Badges
 st.header("Education")
 st.write("🎓 **Bachelor of Applied Network Systems Engineering**")
-st.write("GPA: `4.35 / 5.00` | 2023 | College of Technology at Dammam")
+st.write("GPA: 4.35 / 5.00 | 2023 | College of Technology at Dammam")
 st.write("🎓 **Diploma in IT Technical Support - Network**")
-st.write("GPA: `4.15 / 5.00` | 2019 | International Technical College at Makkah")
+st.write("GPA: 4.15 / 5.00 | 2019 | International Technical College at Makkah")
 
 # Work Experience Section with Collapsible Sections
 st.header("Work Experience")
@@ -135,4 +102,5 @@ st.write("🔹 **Threat Detection**")
 st.write("---")
 st.write("📄 [Download Full Resume](https://www.linkedin.com/in/zhanas)")  # Link to resume or LinkedIn
 
-# Run the app with: `streamlit run <filename>.py`
+# Run the app with: streamlit run <filename>.py
+
