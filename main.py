@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="Anas Alzahrani's Resume", layout="centered")
 
 # Load a profile picture (replace 'profile.jpg' with your image file path)
-profile_pic = Image.open("1691782968841.JPEG")
+profile_pic = Image.open("https://github.com/FaisalMathCS/Anas_CV/blob/main/1691782968841.jpeg")
 
 # Main Title
 st.title("Resume of Anas Alzahrani")
