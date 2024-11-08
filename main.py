@@ -5,8 +5,6 @@ from PIL import Image
 st.set_page_config(page_title="Anas Alzahrani's Resume", layout="centered")
 
 # Load a profile picture (replace 'profile.jpg' with your image file path)
-profile_pic = Image.open("https://github.com/FaisalMathCS/Anas_CV/blob/main/1691782968841.jpeg")
-
 # Main Title
 st.title("Resume of Anas Alzahrani")
 st.subheader("Network System Engineer")
@@ -16,7 +14,7 @@ st.write("SCE Membership No: 953065")
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image(profile_pic, width=150)
+    st.image("https://github.com/FaisalMathCS/Anas_CV/blob/main/1691782968841.jpeg", width=150)
 
 with col2:
     st.markdown(
